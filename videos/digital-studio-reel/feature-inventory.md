@@ -110,6 +110,7 @@ was changed on the site.
 | D12 | After a registration error the page clears the password and licence file (test-report R3) | Live | Low |
 | D13 | First SMS code did not arrive; the resend did (test-report R5) | Live | Watch |
 | D14 | The সহায়তা tab shows a "ভার্চুয়াল অ্যাসিস্ট্যান্ট (আমাদের টিম)" request form, though the owner says it is not launched | Live | Keep out of videos |
+| D15 | New-customer form: if "কাস্টমার যোগ করুন" is pressed while the number is still being checked, the page re-renders, clears the password and **re-ticks "অটো SMS পাঠান"** even if the owner unticked it, so an SMS could go out unintentionally (test-report R9) | Live | Medium |
 | D11 | AI photo edit may not be live (error text "Google বিলিং বাকি"); the "AI সহকারী" card is placeholder text | Code | **Keep both out of the videos** |
 
 ## E. Rules for the scripts that follow from this
