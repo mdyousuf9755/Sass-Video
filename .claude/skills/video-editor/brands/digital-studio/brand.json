@@ -129,10 +129,13 @@
     "allow": [
       "shop name",
       "shop address",
-      "the business contact number 01865453564 on the CTA card (user-approved)",
-      "the demo shop's test mobile number 01581470954 (user-approved to appear on screen)"
+      "the business contact number 01865453564 on the CTA card (user-approved)"
     ],
-    "style": "blur"
+    "style": "blur",
+    "demo_number": {
+      "show": "01700-000000",
+      "rule": "Wherever the demo shop's real login mobile appears on screen, cover it and overlay this demo number in the same style (user's instruction, 2026-10-15). Never show the real test number."
+    }
   },
   "cta": {
     "offer": "টেস্ট ভার্সনে *১ জিবি ফ্রি*",
