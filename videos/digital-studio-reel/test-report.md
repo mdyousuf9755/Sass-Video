@@ -33,6 +33,10 @@ here.
 | R20 | 2026-10-15 | Shop sees the order | — | Shown only **after a page reload** (badges "শপ (১)", "নতুন অর্ডার ১"); no live update | ✅ / ⚠️ UX |
 | R21 | 2026-10-15 | Shop: প্রক্রিয়ায় → নগদ পেয়েছি → সম্পন্ন | — | "আপডেট হয়েছে", "পেমেন্ট নিশ্চিত হয়েছে"; status "সম্পন্ন · পরিশোধিত". রিপোর্ট: 1 order, 1 completed, income ৳450, "অক্টোবর ২০২৬ · ১টি অর্ডার · ৪৫০ টাকা", top product listed | ✅ |
 
+| R22 | 2026-10-15 | Customer places a service order | "প্রিন্ট ও ফটোকপি", details "ডেমো সেবা অর্ডার: ১০ পাতা প্রিন্ট (টেস্ট)" | "অর্ডার গেছে। দোকানদার মূল্য ঠিক করবেন।"; listed as "নতুন", "মূল্য: দোকানদার ঠিক করবেন" | ✅ |
+| R23 | 2026-10-15 | Shop: set price ৳50, status "চলছে", আপডেট | — | "আপডেট হয়েছে", status "চলছে" | ✅ |
+| R24 | 2026-10-15 | টেমপ্লেট: download the ready-made file and a design template | "English 2 page cv"; visiting card → "SVG ডাউনলোড করুন" | Both download (DOCX 86 KB, SVG). **The only ready-made CV is a real person's CV** (full name, home address, mobile number, email), available to every shop. The downloaded copy was deleted | ✅ / ❌ **privacy** |
+
 The first number (01581470954) was already registered, so R2 stopped as the
 brief requires; no login was attempted on that existing account.
 

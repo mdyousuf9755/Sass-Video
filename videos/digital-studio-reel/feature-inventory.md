@@ -115,6 +115,7 @@ was changed on the site.
 | D17 | NID tool: auto-trim leaves a thin strip of background at the card's side edges (test-report R16) | Live | Low |
 | D18 | **Payment settings cannot be saved by a new shop**: `payment_settings` upsert → HTTP 403 (row-level security), even with cash only. Customers of new shops can only pay cash (test-report R17) | Live | **High** |
 | D19 | New orders reach the shop panel only after a page reload (test-report R20) | Live | Low |
+| D20 | **Privacy:** the only ready-made template ("English 2 page cv") is a real person's CV with name, address, mobile and email, downloadable by every shop. Replace it with a dummy CV and never show it in a video (test-report R24) | Live | **High** |
 | D11 | AI photo edit may not be live (error text "Google বিলিং বাকি"); the "AI সহকারী" card is placeholder text | Code | **Keep both out of the videos** |
 
 ## E. Rules for the scripts that follow from this
