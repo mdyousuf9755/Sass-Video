@@ -1,0 +1,109 @@
+{
+  "name": "Digital_Studio",
+  "brand": "digital-studio",
+  "version": 1,
+  "logo": "logo.png",
+  "voiceover": {
+    "mode": "none"
+  },
+  "music": {
+    "file": "audio/music.mp3",
+    "start": 0,
+    "bpm": "auto"
+  },
+  "sound_design": true,
+  "captions": {
+    "burn": true
+  },
+  "cover_at": 1.2,
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "title",
+      "headline": "দোকানের সব কাজ এখনো *খাতায়*?",
+      "text": [
+        "হিসাব মেলাতে রোজ ঝামেলা?"
+      ]
+    },
+    {
+      "id": "problem",
+      "type": "title",
+      "headline": "সময় নষ্ট, ভুলের *ঝুঁকি*",
+      "text": [
+        "অর্ডার হারিয়ে যায়",
+        "হিসাব মেলে না"
+      ]
+    },
+    {
+      "id": "intro",
+      "type": "logo",
+      "text": [
+        "আপনার ব্যবসার সহজ সমাধান"
+      ]
+    },
+    {
+      "id": "feature1",
+      "type": "screen",
+      "clip": "recordings/feature1.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "headline": "[ফিচার ১ — সর্বোচ্চ ৬-৮ শব্দ]",
+      "text": [
+        "[ফিচার ১ কী করে — ছোট লাইন]",
+        "[কেন কাজে লাগে]"
+      ],
+      "zoom": [],
+      "highlight": [],
+      "clicks": [],
+      "blur": [],
+      "steps": [],
+      "follow": true
+    },
+    {
+      "id": "feature2",
+      "type": "screen",
+      "clip": "recordings/feature2.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "headline": "[ফিচার ২]",
+      "text": [
+        "[ফিচার ২ এর সুবিধা]"
+      ],
+      "zoom": [],
+      "highlight": [],
+      "clicks": [],
+      "blur": []
+    },
+    {
+      "id": "feature3",
+      "type": "screen",
+      "clip": "recordings/feature3.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "headline": "[ফিচার ৩]",
+      "text": [
+        "[ফিচার ৩ এর সুবিধা]"
+      ],
+      "zoom": [],
+      "highlight": [],
+      "clicks": [],
+      "blur": []
+    },
+    {
+      "id": "benefit",
+      "type": "title",
+      "headline": "একদম *ফ্রি*, ব্রাউজারেই চলে",
+      "text": [
+        "কোনো ইনস্টল লাগবে না"
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "duration": 6
+    }
+  ]
+}

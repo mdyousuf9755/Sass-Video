@@ -1,0 +1,9 @@
+{
+  "name": "video-editor-engine",
+  "private": true,
+  "description": "Local, pinned HyperFrames install used by the video-editor skill (never modified; upstream is heygen-com/hyperframes).",
+  "dependencies": {
+    "gsap": "3.14.2",
+    "hyperframes": "0.8.150"
+  }
+}

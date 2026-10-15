@@ -1,0 +1,5 @@
+engine/node_modules/
+__pycache__/
+# per-video working folders, if kept inside the skill
+projects/*/build/
+projects/*/out/

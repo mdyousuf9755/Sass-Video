@@ -1,0 +1,146 @@
+{
+  "name": "Digital Studio",
+  "byline": "by Yousuf Digital Center",
+  "tagline": "কাস্টমারের ফাইল রাখুন গুছিয়ে",
+  "url": "digital-studio-bd.pages.dev",
+  "logo": "logo.png",
+  "default_frame": "browser",
+  "product": {
+    "platform": "Web app only - runs in the browser at digital-studio-bd.pages.dev. There is NO mobile app yet.",
+    "never_say": [
+      "মোবাইল অ্যাপ",
+      "অ্যাপ ডাউনলোড করুন",
+      "Play Store / App Store",
+      "ইনস্টল করুন"
+    ],
+    "ok_to_say": [
+      "ব্রাউজারেই চলে",
+      "কোনো ইনস্টল লাগবে না",
+      "যেকোনো ডিভাইসের ব্রাউজারে খুলুন",
+      "ফ্রি রেজিস্টার"
+    ],
+    "verify": "Every feature named in the script must be visible in the recordings and work today.",
+    "what": "Online file storage for computer/print shops: every customer's files in one place, separate login per customer, product sales & orders, bKash/Nagad/Rocket/cash payments. Login as customer, shop owner (দোকানদার) or admin; register with Gmail or mobile number + password.",
+    "audience": "Computer shop owners (print, photocopy, online-service shops) in Bangladesh",
+    "goal": "Register on the test version and send feedback: problems + feature requests",
+    "features_seen": [
+      "সব কাস্টমারের ফাইল এক জায়গায় (নিরাপদ অনলাইন স্টোরেজ, ১ জিবি ফ্রি)",
+      "প্রতি কাস্টমারের আলাদা লগইন — কাস্টমার নিজে ফাইল দেখে ও ডাউনলোড করে",
+      "ফাইল আপলোড ও মোবাইলে ডকুমেন্ট স্ক্যান; কাজ সম্পন্ন চিহ্নিত করা",
+      "কাজ শেষে কাস্টমার রিভিউ ও স্টার রেটিং দেয়; নোটিফিকেশন পায়",
+      "পণ্য বিক্রি, পণ্যের অর্ডার ও সেবার অর্ডার",
+      "বিকাশ, নগদ, রকেট ও ক্যাশ পেমেন্ট — টাকা সরাসরি দোকানদারের নম্বরে",
+      "প্রচার: AI দিয়ে বিজ্ঞাপন লেখা, কাস্টমারের হোমে স্পনসর্ড হিসেবে দেখায়",
+      "টেমপ্লেট: CV/দলিল ইত্যাদি রেডিমেড ফাইল + ভিজিটিং কার্ড, পোস্টার, ব্যানার ডিজাইন",
+      "রিপোর্ট: মোট/সম্পন্ন অর্ডার, আয়, মাসিক হিসাব, কোন সেবা বেশি চলছে",
+      "ড্যাশবোর্ড: নতুন অর্ডার, কাস্টমার, পণ্য, আয়, প্রোফাইল ভিউ, স্টোরেজ",
+      "স্টাফ অ্যাকাউন্ট, সহায়তা, প্রোফাইল, নোটিফিকেশন",
+      "কাস্টমার কাছের দোকান খুঁজে পায়; অন্য দোকানকে ফাইলে কাজের অনুমতি দিতে পারে",
+      "Gmail দিয়ে এক চাপে দোকান রেজিস্ট্রেশন"
+    ],
+    "offer": "Test version: 1 GB free"
+  },
+  "colors": {
+    "bg_dark": "#072B2E",
+    "bg": "#083134",
+    "teal": "#0B6E6E",
+    "teal_light": "#19B0AD",
+    "gold": "#E8A317",
+    "gold_light": "#F4C55A",
+    "text": "#FFFFFF",
+    "text_muted": "#A9CBC8",
+    "text_dark": "#12262B",
+    "caption_box": "#072B2E",
+    "_source": "sampled from the app's login screen"
+  },
+  "fonts": {
+    "family": "Hind Siliguri",
+    "dir": "../../assets/fonts",
+    "regular": "HindSiliguri-Regular.ttf",
+    "semibold": "HindSiliguri-SemiBold.ttf",
+    "bold": "HindSiliguri-Bold.ttf"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "ratio_label": "9x16",
+    "target_seconds": 45,
+    "max_seconds": 60
+  },
+  "layout": {
+    "safe_top": 270,
+    "safe_bottom": 1250,
+    "safe_side": 70,
+    "headline_y": 360,
+    "headline_size": 76,
+    "caption_y": 1225,
+    "caption_size": 56,
+    "device_top": 520,
+    "device_bottom": 1800
+  },
+  "motion": {
+    "transition_seconds": 0.4,
+    "zoom_ramp_seconds": 0.5,
+    "default_zoom": 1.6,
+    "max_screen_seconds": 8.0
+  },
+  "voice": {
+    "default_mode": "none",
+    "_note": "Digital Studio reels use NO voice-over (music + SFX + on-screen Bangla text). Set voiceover.mode in a project to 'scenes' or 'single' to add one.",
+    "language": "bn-BD",
+    "tts_voice": "bn-BD-PradeepNeural",
+    "tts_rate": "+8%",
+    "tts_pitch": "+0Hz",
+    "lead_in_seconds": 0.15,
+    "tail_seconds": 0.25,
+    "chars_per_second_estimate": 13
+  },
+  "audio": {
+    "target_lufs": -14,
+    "true_peak": -1.5,
+    "voice_lufs": -16,
+    "music_lufs": -16,
+    "music_gain_db": -11,
+    "duck_threshold": 0.03,
+    "duck_ratio": 6,
+    "sfx_gain_db": {
+      "click": -14,
+      "whoosh": -16,
+      "pop": -13
+    },
+    "music_gain_db_no_vo": 0
+  },
+  "captions": {
+    "max_words": 5,
+    "max_chars": 30,
+    "reading_cps": 11,
+    "min_line_seconds": 1.4
+  },
+  "privacy": {
+    "hide": [
+      "phone numbers",
+      "email addresses",
+      "passwords / PINs / OTPs",
+      "customer names and numbers",
+      "payment / bKash / bank details",
+      "faces in profile photos (customers, other shop owners)"
+    ],
+    "allow": [
+      "shop name",
+      "shop address",
+      "the business contact number 01865453564 on the CTA card (user-approved)"
+    ],
+    "style": "blur"
+  },
+  "cta": {
+    "offer": "টেস্ট ভার্সনে *১ জিবি ফ্রি*",
+    "headline": "আজই রেজিস্টার করুন",
+    "url": "digital-studio-bd.pages.dev",
+    "secondary": "আপনার মতামত জানান",
+    "developer": "Developed by Yousuf Digital Center",
+    "contact": "Contact: *01865453564*"
+  },
+  "address": "College Road, Kankirhat, Senbagh, Noakhali",
+  "logo_note": "Official Digital Studio logo (folder + documents + shield), supplied by the user."
+}

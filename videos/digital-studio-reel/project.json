@@ -1,0 +1,333 @@
+{
+  "name": "Digital_Studio",
+  "brand": "digital-studio",
+  "version": 5,
+  "voiceover": {
+    "mode": "scenes"
+  },
+  "music": {
+    "file": "placeholder",
+    "bpm": "off"
+  },
+  "sound_design": true,
+  "captions": {
+    "burn": false
+  },
+  "cover_at": 1.2,
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "title",
+      "icon": "pendrive-x",
+      "duration": 3.4,
+      "headline": "কাস্টমার পেনড্রাইভ *আনেনি*?",
+      "vo": "কাস্টমার আবার পেনড্রাইভ আনতে ভুলে গেছে?",
+      "vo_file": "audio/vo_hook.wav"
+    },
+    {
+      "id": "login",
+      "type": "screen",
+      "clip": "recordings/login.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "duration": 3.4,
+      "headline": "*Digital Studio*",
+      "blur": [
+        {
+          "box": [
+            0.6,
+            0.505,
+            0.31,
+            0.06
+          ]
+        },
+        {
+          "box": [
+            0.52,
+            0.59,
+            0.39,
+            0.05
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "t": 1.0,
+          "x": 0.706,
+          "y": 0.224,
+          "label": "দোকানদার"
+        }
+      ],
+      "vo": "সমাধান এখন Digital Studio!",
+      "vo_file": "audio/vo_login.wav"
+    },
+    {
+      "id": "register",
+      "type": "screen",
+      "clip": "recordings/shop_register.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "duration": 6.4,
+      "headline": "Gmail দিয়ে *দোকান খুলুন*",
+      "blur": [
+        {
+          "box": [
+            0.53,
+            0.15,
+            0.24,
+            0.065
+          ]
+        },
+        {
+          "box": [
+            0.5,
+            0.41,
+            0.2,
+            0.04
+          ]
+        },
+        {
+          "box": [
+            0.6,
+            0.585,
+            0.14,
+            0.04
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "t": 0.8,
+          "x": 0.837,
+          "y": 0.182,
+          "label": "Gmail যাচাই ✓"
+        },
+        {
+          "t": 1.9,
+          "x": 0.686,
+          "y": 0.34,
+          "label": "দোকানের নাম ও ঠিকানা"
+        },
+        {
+          "t": 3.0,
+          "x": 0.549,
+          "y": 0.784,
+          "label": "ট্রেড লাইসেন্স"
+        },
+        {
+          "t": 4.1,
+          "x": 0.696,
+          "y": 0.891,
+          "label": "নিবন্ধন শেষ ✓"
+        }
+      ],
+      "follow": true,
+      "vo": "Gmail দিয়ে সহজেই দোকান রেজিস্টার করুন।",
+      "vo_file": "audio/vo_register.wav"
+    },
+    {
+      "id": "add_customer",
+      "type": "screen",
+      "clip": "recordings/add_customer.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "duration": 6.4,
+      "headline": "প্রতি কাস্টমারের *আলাদা লগইন*",
+      "blur": [
+        {
+          "box": [
+            0.23,
+            0.44,
+            0.56,
+            0.035
+          ]
+        },
+        {
+          "box": [
+            0.27,
+            0.85,
+            0.13,
+            0.05
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "t": 0.7,
+          "x": 0.392,
+          "y": 0.239,
+          "label": "কাস্টমারের নাম"
+        },
+        {
+          "t": 1.7,
+          "x": 0.804,
+          "y": 0.239,
+          "label": "মোবাইল নম্বর"
+        },
+        {
+          "t": 2.7,
+          "x": 0.745,
+          "y": 0.325,
+          "label": "পাসওয়ার্ড"
+        },
+        {
+          "t": 3.8,
+          "x": 0.294,
+          "y": 0.526,
+          "label": "কাস্টমার যোগ ✓"
+        }
+      ],
+      "follow": true,
+      "vo": "প্রতিটা কাস্টমারের জন্য আলাদা লগইন।",
+      "vo_file": "audio/vo_add_customer.wav"
+    },
+    {
+      "id": "upload",
+      "type": "screen",
+      "clip": "recordings/customer.mp4",
+      "in": 0,
+      "out": 7.2,
+      "frame": "browser",
+      "duration": 6.4,
+      "headline": "*আপলোড* বা *স্ক্যান*",
+      "blur": [
+        {
+          "box": [
+            0.372,
+            0.165,
+            0.255,
+            0.05
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "t": 0.8,
+          "x": 0.405,
+          "y": 0.654,
+          "label": "ফাইল আপলোড"
+        },
+        {
+          "t": 2.0,
+          "x": 0.402,
+          "y": 0.783,
+          "label": "ক্যামেরায় ডকুমেন্ট স্ক্যান"
+        },
+        {
+          "t": 3.2,
+          "x": 0.396,
+          "y": 0.281,
+          "label": "কাজ সম্পন্ন ✓"
+        }
+      ],
+      "follow": true,
+      "vo": "ফাইল আপলোড করুন, বা ক্যামেরায় ডকুমেন্ট স্ক্যান করুন।",
+      "vo_file": "audio/vo_upload.wav"
+    },
+    {
+      "id": "customer_side",
+      "type": "screen",
+      "clip": "recordings/customer_side.mp4",
+      "in": 0,
+      "out": 6,
+      "frame": "browser",
+      "duration": 5.4,
+      "headline": "কাস্টমার *নিজেই নেবে*",
+      "blur": [
+        {
+          "box": [
+            0.6,
+            0.505,
+            0.31,
+            0.06
+          ],
+          "until": 2.4
+        },
+        {
+          "box": [
+            0.52,
+            0.59,
+            0.39,
+            0.05
+          ],
+          "until": 2.4
+        },
+        {
+          "box": [
+            0.25,
+            0.635,
+            0.18,
+            0.04
+          ],
+          "t": 2.4
+        }
+      ],
+      "steps": [
+        {
+          "t": 0.8,
+          "x": 0.578,
+          "y": 0.224,
+          "label": "কাস্টমার লগইন"
+        },
+        {
+          "t": 3.2,
+          "x": 0.775,
+          "y": 0.665,
+          "label": "নিজেই ডাউনলোড"
+        }
+      ],
+      "follow": true,
+      "vo": "কাস্টমার নিজেই লগইন করে ফাইল নেবে।",
+      "vo_file": "audio/vo_customer_side.wav"
+    },
+    {
+      "id": "payment",
+      "type": "screen",
+      "clip": "recordings/payment.mp4",
+      "in": 0,
+      "out": 8,
+      "frame": "browser",
+      "duration": 5.4,
+      "headline": "বিকাশ • নগদ • রকেট • *টেমপ্লেট*",
+      "steps": [
+        {
+          "t": 0.8,
+          "x": 0.892,
+          "y": 0.145,
+          "label": "বিকাশ • নগদ • রকেট"
+        },
+        {
+          "t": 2.6,
+          "x": 0.118,
+          "y": 0.474,
+          "label": "রেডিমেড টেমপ্লেট"
+        }
+      ],
+      "follow": true,
+      "vo": "বিকাশ, নগদ, রকেটে পেমেন্ট, সাথে রেডিমেড টেমপ্লেট।",
+      "vo_file": "audio/vo_payment.wav"
+    },
+    {
+      "id": "reviews",
+      "type": "list",
+      "duration": 5.4,
+      "headline": "*রিভিউ* • *কাছের দোকান*",
+      "items": [
+        "কাজ শেষে স্টার রেটিং ও রিভিউ",
+        "কাছের দোকানের তালিকায় আপনার দোকান"
+      ],
+      "vo": "রিভিউ আর কাছের দোকানের তালিকায় কাস্টমার আপনাকে খুঁজে পাবে।",
+      "vo_file": "audio/vo_reviews.wav"
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "duration": 6.5,
+      "vo": "টেস্ট ভার্সনে এখন এক জিবি ফ্রি! আজই রেজিস্টার করুন, আর মতামত জানান।",
+      "vo_file": "audio/vo_cta.wav"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# keep footage and renders out of git (they can contain private data and are large)
+recordings/
+audio/
+build/
+out/
