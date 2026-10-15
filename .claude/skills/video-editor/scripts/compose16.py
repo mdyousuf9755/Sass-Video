@@ -256,8 +256,9 @@ def build(proj, brand, hfdir, draft):
             vo_start = t + float(sc.get("vo_offset", 0.45 if i else 0.3))
             vo_end = vo_start + (media_duration(pfile(proj["_dir"], vf)) if vf
                                  else max(1.5, dur - (0.9 if not last else 0.6)))
-            timed = time_chunks(chunk_text(plain(sc["vo"]), CAP["max_words"], CAP["max_chars"]),
-                                vo_start, min(vo_end, t + dur - 0.3))
+            # vo_overflow: the voice runs on into the next scene, so its subtitles may too
+            cap_end = vo_end if sc.get("vo_overflow") else min(vo_end, t + dur - 0.3)
+            timed = time_chunks(chunk_text(plain(sc["vo"]), CAP["max_words"], CAP["max_chars"]), vo_start, cap_end)
             captions += timed
             if proj.get("captions", {}).get("burn", True) and sc.get("captions", sc["type"] != "cta"):
                 for a, b, text in timed:
@@ -418,8 +419,8 @@ def cmd_render(a):
     if a.draft:
         name += "_DRAFT"
     final = out / f"{name}.mp4"
-    ffmpeg("-i", str(raw), "-i", str(audio), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "libx264", "-crf", "17",
-           "-preset", "medium", "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "320k", "-ar", "48000",
+    ffmpeg("-i", str(raw), "-i", str(audio), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "libx264", "-crf", "14",
+           "-preset", "slow", "-tune", "stillimage", "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "320k", "-ar", "48000",
            "-t", f"{total:.3f}", "-movflags", "+faststart", str(final))
     (out / f"{name}.srt").write_text("\n".join(f"{i}\n{srt_time(s)} --> {srt_time(e)}\n{t}\n"
                                                 for i, (s, e, t) in enumerate(captions, 1)), encoding="utf-8")
