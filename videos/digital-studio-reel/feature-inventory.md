@@ -113,6 +113,8 @@ was changed on the site.
 | D15 | New-customer form: if "কাস্টমার যোগ করুন" is pressed while the number is still being checked, the page re-renders, clears the password and **re-ticks "অটো SMS পাঠান"** even if the owner unticked it, so an SMS could go out unintentionally (test-report R9) | Live | Medium |
 | D16 | Photo tool: saving the A4 sheet to a customer's folder shows no confirmation message (test-report R15) | Live | Low |
 | D17 | NID tool: auto-trim leaves a thin strip of background at the card's side edges (test-report R16) | Live | Low |
+| D18 | **Payment settings cannot be saved by a new shop**: `payment_settings` upsert → HTTP 403 (row-level security), even with cash only. Customers of new shops can only pay cash (test-report R17) | Live | **High** |
+| D19 | New orders reach the shop panel only after a page reload (test-report R20) | Live | Low |
 | D11 | AI photo edit may not be live (error text "Google বিলিং বাকি"); the "AI সহকারী" card is placeholder text | Code | **Keep both out of the videos** |
 
 ## E. Rules for the scripts that follow from this

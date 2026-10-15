@@ -27,6 +27,12 @@ here.
 | R15 | 2026-10-15 | Photo tool → "A4 শিট (PDF) কাস্টমারের ফোল্ডারে রাখুন" | Demo customer | File appears in the folder ("ফাইল (৩)", photo-sheet-a4.pdf 446 KB). **No on-screen confirmation** was visible after saving | ✅ / ⚠️ UX |
 | R16 | 2026-10-15 | সেবা → এনআইডি A4 | Generic "DEMO ID CARD" made for the test (fake data, no real person), photographed tilted +6° / −5° on a desk | Auto-straighten detected −6° and +5° exactly. A4 PDF and JPG: both sides straight, real card size, centred. Auto-trim leaves a thin strip of the desk on the left and right edges | ✅ / ⚠️ minor |
 
+| R17 | 2026-10-15 | শপ → পেমেন্ট: save bKash/Nagad/Rocket | Demo number 01700000000 (owner-approved) | **Failed**: "কিছু একটা সমস্যা হয়েছে, আবার চেষ্টা করুন"; server `POST /rest/v1/payment_settings` → **HTTP 403**. Also fails with **no number at all** (cash only), so it is not the number. The upsert is refused by the table's row-level security for a new shop with no row yet. Nothing saved | ❌ **bug** |
+| R18 | 2026-10-15 | শপ → পণ্য: add product | "ডেমো পেনড্রাইভ 16GB", ৳450, stock 10, description, extra info, demo image | "যোগ হয়েছে"; "আমার পণ্য (১)" | ✅ |
+| R19 | 2026-10-15 | Customer orders the product | Qty 1, payment "ক্যাশ অন ডেলিভারি" (the only method, because of R17), note | "অর্ডার হয়েছে। দোকানদার নিশ্চিত করবেন।"; customer অর্ডার tab: "× ১ নতুন · মোট ৪৫০ টাকা · ক্যাশ" | ✅ |
+| R20 | 2026-10-15 | Shop sees the order | — | Shown only **after a page reload** (badges "শপ (১)", "নতুন অর্ডার ১"); no live update | ✅ / ⚠️ UX |
+| R21 | 2026-10-15 | Shop: প্রক্রিয়ায় → নগদ পেয়েছি → সম্পন্ন | — | "আপডেট হয়েছে", "পেমেন্ট নিশ্চিত হয়েছে"; status "সম্পন্ন · পরিশোধিত". রিপোর্ট: 1 order, 1 completed, income ৳450, "অক্টোবর ২০২৬ · ১টি অর্ডার · ৪৫০ টাকা", top product listed | ✅ |
+
 The first number (01581470954) was already registered, so R2 stopped as the
 brief requires; no login was attempted on that existing account.
 
