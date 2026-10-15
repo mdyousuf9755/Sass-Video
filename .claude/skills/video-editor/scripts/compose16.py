@@ -127,6 +127,25 @@ def screen_html(sc, i, last, brand, sfx):
         script.append(f'tl.to("#{sid}-cam", {{ scale: {n(S)}, x: {n(tx)}, y: {n(ty)}, duration: {n(r)}, ease: "power2.inOut" }}, {n(a)});')
         if not z.get("hold"):
             script.append(f'tl.to("#{sid}-cam", {{ scale: 1, x: 0, y: 0, duration: {n(r)}, ease: "power2.inOut" }}, {n(b - r)});')
+    # highlight boxes (normalised to the recording) with an optional callout label
+    overlays = []
+    for k, hb in enumerate(sc.get("highlight", [])):
+        x, y, w, h = hb["box"]
+        a, d = float(hb.get("t", 0)), float(hb.get("dur", dur - float(hb.get("t", 0)) - 0.3))
+        lab = (f'<div class="hl-lab" style="{"top:100%;margin-top:14px" if hb.get("below") else "bottom:100%;margin-bottom:14px"}">'
+               f'{rich(hb["label"])}</div>' if hb.get("label") else "")
+        overlays.append(f'<div class="hl" id="{sid}-hl{k}" style="left:{n(x * 100)}%;top:{n(y * 100)}%;'
+                        f'width:{n(w * 100)}%;height:{n(h * 100)}%">{lab}</div>')
+        script.append(f'tl.fromTo("#{sid}-hl{k}", {{ opacity: 0, scale: 1.12 }}, {{ opacity: 1, scale: 1, duration: 0.35, '
+                      f'ease: "back.out(1.6)" }}, {n(a)});')
+        script.append(f'tl.to("#{sid}-hl{k}", {{ opacity: 0, duration: 0.25 }}, {n(a + d)});')
+        sfx.append(("pop", s0 + a))
+    css += f"""
+#{sid}-stage .hl {{ position: absolute; border: 6px solid {C['gold']}; border-radius: 16px; opacity: 0;
+  box-shadow: 0 0 0 9999px rgba(7,20,22,.35), 0 0 30px {rgba(C['gold'], .6)}; }}
+#{sid}-stage .hl-lab {{ position: absolute; right: 0; white-space: nowrap; padding: 8px 22px; border-radius: 14px;
+  background: {C['gold']}; color: {C['bg_dark']}; font-size: 34px; font-weight: 700; box-shadow: 0 8px 22px rgba(0,0,0,.35); }}
+#{sid}-stage .hl-lab .em {{ color: {C['bg_dark']}; text-decoration: underline; }}"""
     body = []
     if sc.get("headline"):
         body.append(f'<div id="{sid}-head"><h2 id="{sid}-h">{rich(sc["headline"])}</h2></div>')
@@ -136,7 +155,7 @@ def screen_html(sc, i, last, brand, sfx):
     body.append(f'<div id="{sid}-frame"><div id="{sid}-bar"><i style="background:#ff5f57"></i>'
                 f'<i style="background:#febc2e"></i><i style="background:#28c840"></i><div id="{sid}-url">{url}</div></div>'
                 f'<div id="{sid}-screen"><div id="{sid}-cam"><video id="{sid}-vid" src="../assets/clips/{sid}.mp4" '
-                f'muted playsinline data-start="0" data-duration="{n(dur)}"></video></div></div></div>')
+                f'muted playsinline data-start="0" data-duration="{n(dur)}"></video>{"".join(overlays)}</div></div></div>')
     return sub_doc(sid, dur, brand, css, "\n".join(body), "\n".join(script))
 
 
