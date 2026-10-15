@@ -100,7 +100,7 @@ was changed on the site.
 | D1 | ~~"1 GB free" is not in the code~~ **Resolved 2026-10-15:** a newly registered demo shop shows "০ বাইট / ১.০০ জিবি" (test-report R7). The CTA claim is true | Live ✅ | Resolved |
 | D2 | Shop owners and staff have no "forgot password" and no in-app password change; only the admin has one | Code | Medium |
 | D3 | The customer FAQ says "নিজে অ্যাকাউন্ট খোলা যায় না", which contradicts the self sign-up feature | Code | Low |
-| D4 | Plain staff: "আরও স্টোরেজ কিনুন" and "ক্রেডিট কিনুন" do nothing visible (the page is hidden from them) | Code | Low |
+| D4 | ✅ confirmed live (R27). Plain staff: "আরও স্টোরেজ কিনুন" and "ক্রেডিট কিনুন" do nothing visible (the page is hidden from them) | Code | Low |
 | D5 | Developer setup messages could reach users ("Supabase-এ Confirm email বন্ধ করুন", "GEMINI_API_KEY বসাতে হবে") | Code | Low |
 | D6 | Social-link icons load from an `icons/` folder; if it is missing, profiles show broken images | Code | Check live |
 | D7 | Mobile registration page: in the full-page screenshot the dark background stops partway and the rest is light grey | Browser 🖥 | Cosmetic, check on a phone |
@@ -116,6 +116,7 @@ was changed on the site.
 | D18 | **Payment settings cannot be saved by a new shop**: `payment_settings` upsert → HTTP 403 (row-level security), even with cash only. Customers of new shops can only pay cash (test-report R17) | Live | **High** |
 | D19 | New orders reach the shop panel only after a page reload (test-report R20) | Live | Low |
 | D20 | **Privacy:** the only ready-made template ("English 2 page cv") is a real person's CV with name, address, mobile and email, downloadable by every shop. Replace it with a dummy CV and never show it in a video (test-report R24) | Live | **High** |
+| D21 | Plain staff see the shop's income ("আয় (টাকা)") on the dashboard, although the staff role is meant to hide reports (test-report R27) | Live | Low–Medium |
 | D11 | AI photo edit may not be live (error text "Google বিলিং বাকি"); the "AI সহকারী" card is placeholder text | Code | **Keep both out of the videos** |
 
 ## E. Rules for the scripts that follow from this

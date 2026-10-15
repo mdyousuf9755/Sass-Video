@@ -39,6 +39,9 @@ here.
 
 | R25 | 2026-10-15 | স্টাফ → add staff | Owner-supplied number, role স্টাফ | Server `manage-customers` → HTTP 409, "আগেই ব্যবহার হয়েছে": the number already has an account. No staff created; test stopped | ⛔ needs an unused number |
 
+| R26 | 2026-10-15 | স্টাফ → add staff (new number) | "ডেমো স্টাফ", role স্টাফ, owner-supplied number | "স্টাফ যোগ হয়েছে। মোবাইল নম্বর ও পাসওয়ার্ড তাকে জানান।"; "স্টাফ তালিকা (১)" with "সরান" (remove) | ✅ |
+| R27 | 2026-10-15 | Staff login on the দোকানদার tab | Staff mobile + password | Logged in: "স্বাগতম (স্টাফ)". Tabs: ড্যাশবোর্ড, কাস্টমার, সেবা, শপ, প্রচার, টেমপ্লেট, সহায়তা, নোটিফিকেশন; **রিপোর্ট, স্টোরেজ, স্টাফ, প্রোফাইল hidden** as designed. The first sign-in attempt returns HTTP 400 and the app then retries as staff (expected from the code). The dashboard still shows the shop's **income (৳450)** to plain staff, although staff are not meant to see reports. "আরও স্টোরেজ কিনুন" does nothing for staff (confirms D4) | ✅ / ⚠️ |
+
 The first number (01581470954) was already registered, so R2 stopped as the
 brief requires; no login was attempted on that existing account.
 
