@@ -106,7 +106,11 @@ is in `reference/workflow.md`.
    grid. Times are **source-clip seconds**.
 6. **Music and timing.**
    - **Music:** set `music.file` to a royalty-free, upbeat track; use
-     `"placeholder"` for drafts only.
+     `"placeholder"` for drafts only. With no track from the user, make an
+     original one (synthesised in code, so it is publishable and needs no
+     licence): `python3 scripts/music_gen.py promo audio/music.wav
+     --seconds 48` (upbeat, 112 BPM) or `bed … --seconds 240` (calmer,
+     100 BPM, for tutorials). Ask the user to listen before the final.
    - **Beat:** with `music.bpm: "auto"` (the default), `hyperframes beats`
      detects the tempo and every scene cut lands on a beat.
    - **Text scenes:** a scene lasts as long as its text takes to read
