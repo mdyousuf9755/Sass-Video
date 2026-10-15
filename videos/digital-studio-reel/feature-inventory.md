@@ -1,6 +1,6 @@
 # Digital Studio: feature inventory
 
-**Status: Phase 1, partly done (2026-10-15).** Every tab and function below
+**Status: Phase 1 in progress (2026-10-15). Demo shop registered and all 12 shop tabs open without errors (see `test-report.md`).** Every tab and function below
 was found by reading the live site's code. The public screens were also
 opened in a real browser. **Nothing behind login has been tested yet.** The
 live login and data server (Supabase) is blocked by this cloud session's
@@ -97,7 +97,7 @@ was changed on the site.
 
 | # | Problem | Seen where | Severity |
 |---|---|---|---|
-| D1 | **"1 GB free" is not in the code.** The storage quota is a database value per shop. The owner's dashboard screenshot showed "1.00 GB", but the default for a *new* shop must be confirmed with the demo account before the CTA can promise it | Code | **Blocks the CTA claim** |
+| D1 | ~~"1 GB free" is not in the code~~ **Resolved 2026-10-15:** a newly registered demo shop shows "০ বাইট / ১.০০ জিবি" (test-report R7). The CTA claim is true | Live ✅ | Resolved |
 | D2 | Shop owners and staff have no "forgot password" and no in-app password change; only the admin has one | Code | Medium |
 | D3 | The customer FAQ says "নিজে অ্যাকাউন্ট খোলা যায় না", which contradicts the self sign-up feature | Code | Low |
 | D4 | Plain staff: "আরও স্টোরেজ কিনুন" and "ক্রেডিট কিনুন" do nothing visible (the page is hidden from them) | Code | Low |
@@ -107,6 +107,9 @@ was changed on the site.
 | D8 | The file pickers show the browser's English "Choose File / No file chosen" | Browser 🖥 | Cosmetic |
 | D9 | The views chart is labelled "গত ১৪ দিনের" (last 14 days) while its caption says 30 days | Code | Cosmetic |
 | D10 | `supabase-js@2` is loaded without an exact version; the site's own HTML comment says to pin it | Code | Maintenance |
+| D12 | After a registration error the page clears the password and licence file (test-report R3) | Live | Low |
+| D13 | First SMS code did not arrive; the resend did (test-report R5) | Live | Watch |
+| D14 | The সহায়তা tab shows a "ভার্চুয়াল অ্যাসিস্ট্যান্ট (আমাদের টিম)" request form, though the owner says it is not launched | Live | Keep out of videos |
 | D11 | AI photo edit may not be live (error text "Google বিলিং বাকি"); the "AI সহকারী" card is placeholder text | Code | **Keep both out of the videos** |
 
 ## E. Rules for the scripts that follow from this
@@ -117,7 +120,6 @@ was changed on the site.
   - customer self sign-up;
   - a mobile app;
   - 15 GB;
-  - "1 GB free", until D1 is confirmed.
 - **Strong new scenes to verify first:**
   - the passport photo maker (B5), with background change and an A4 sheet;
   - the NID A4 tool (B7), with a sample card only;
