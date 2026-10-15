@@ -18,6 +18,11 @@ here.
 | R8 | 2026-10-15 | Open every shop tab once (read only) | ড্যাশবোর্ড, কাস্টমার, সেবা, শপ, প্রচার, টেমপ্লেট, রিপোর্ট, স্টোরেজ, সহায়তা, স্টাফ, প্রোফাইল, নোটিফিকেশন | All 12 tabs open with no console or HTTP errors | ✅ |
 | R9 | 2026-10-15 | Add a demo customer (কাস্টমার → নতুন কাস্টমার) | Name "ডেমো কাস্টমার", owner-supplied test mobile (videos show 01700-000000), 8+ char password, **auto-SMS unticked** | First click too early: "নম্বর যাচাই হচ্ছে, এক সেকেন্ড পরে চাপুন". That re-render **cleared the password and re-ticked the auto-SMS box**. After re-entering and unticking: "কাস্টমার তৈরি হয়েছে", welcome card with login text, SMS / WhatsApp / copy buttons. No SMS sent | ✅ / ⚠️ bug |
 
+| R10 | 2026-10-15 | Upload files to the demo customer (shop side) | Two sample files made for the test ("Demo CV", PDF 97 KB + JPG 130 KB, no real person) | "আপলোড হয়েছে"; "ফাইল (২)" listed with size, ডাউনলোড / মুছুন | ✅ |
+| R11 | 2026-10-15 | Download from the shop side | demo-cv.pdf | Downloaded file is byte-identical (99,270 bytes) | ✅ |
+| R12 | 2026-10-15 | Customer login + every customer tab (separate browser) | Demo customer's mobile + password | Login OK. হোম, আমার ফাইল, আমার দোকান, অর্ডার, নোটিফিকেশন, সাহায্য, আমার প্রোফাইল all open with no errors. Both files listed; JPG download OK. Home shows a real sponsored ad and other real shops in "সব দোকান" | ✅ |
+| R13 | 2026-10-15 | Mark job done (shop) → notification → review (customer) | 5 stars + demo comment | Shop button turns into "✓ কাজ সম্পন্ন (বাতিল করতে চাপুন)". Customer gets notification "আপনার কাজ সম্পন্ন হয়েছে…" (badge "নোটিফিকেশন (১)") and a home banner with "রিভিউ দিন". Review submitted: "আপনি রিভিউ দিয়েছেন। ধন্যবাদ!", shop rating ৫.০ | ✅ |
+
 The first number (01581470954) was already registered, so R2 stopped as the
 brief requires; no login was attempted on that existing account.
 
@@ -47,3 +52,10 @@ brief requires; no login was attempted on that existing account.
 - On desktop 1920×1080 the registration page is taller than the window and
   the teal page background stops at the bottom of the first screen (white
   strip below). Same as D7 in `feature-inventory.md`, now seen on desktop too.
+
+## Recording notes from the customer side
+
+- The customer **হোম** shows other real shops (names and addresses) under
+  "সব দোকান" and a real sponsored ad from another shop. Shop name and
+  address are allowed on screen, but these are third parties: crop or blur
+  them, or show only the demo shop.
