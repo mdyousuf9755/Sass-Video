@@ -51,3 +51,46 @@ unchanged next to it.
 - The voice-over was made on an ElevenLabs **free** account. ElevenLabs'
   free plan does not include commercial use; the owner should confirm the
   licence before publishing.
+
+## Tutorial v3
+
+File: `exports/Digital_Studio_Tutorial_v3_16x9_2026-10-15.mp4`. v2 is kept
+unchanged next to it.
+
+### What changed from v2
+
+- **Dashboard (46.3–59.1 s):** the same fix as promo v3. There is no zoom,
+  so the whole app is in the frame. The storage card is highlighted with
+  "ব্যবহৃত ৬৭৩ কেবি · মোট ১ জিবি ফ্রি".
+- **Registration (25.6–46.3 s):**
+  - The recording is framed on the form. The app's own left panel, which
+    lists "বিকাশ, নগদ, রকেট ও ক্যাশ পেমেন্ট", is no longer visible:
+    bKash/Nagad/Rocket stay out until the payment-settings bug (D18) is
+    fixed.
+  - The code-entry screenshots are cropped to the form card only.
+  - The number shows as 01700-000000 and the code as dots.
+- **Everything else is unchanged:** the other scenes, the voice-over,
+  subtitles and music. No new recording, demo record or production data
+  change.
+
+### Measurements
+
+| Check | Result |
+|---|---|
+| Video | H.264, **1920×1080, 30 fps** |
+| Duration | **208.80 s (3:28.8)** |
+| Audio | AAC 48 kHz stereo; voice-over (Rafiq) in all 14 scenes; **−14.1 LUFS**, peak −1.9 dBFS |
+| Black frames (>0.3 s) | none |
+| Silence (>2.5 s, −45 dB) | none |
+| Subtitles | Burned in; `.srt` with 74 cues, timed to each scene's voice file |
+
+### Privacy and claims
+
+- **Privacy:** the same results as the promo.
+  - Inside the app only the demo number 01700-000000 appears.
+  - Passwords are dots; the SMS code is dots.
+  - No other shops, the customer home page, the real CV or a real NID.
+- **Staff line:** it says only that plain staff cannot see রিপোর্ট, স্টোরেজ
+  and প্রোফাইল (true, R27). It does not claim income is hidden (D21).
+- **Not mentioned:** no mobile app, bKash/Nagad/Rocket, AI, Gmail login,
+  15 GB or customer self sign-up.
