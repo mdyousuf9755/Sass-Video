@@ -1,0 +1,122 @@
+{
+ "name": "Digital_Studio_Promo",
+ "version": 1,
+ "brand": "digital-studio",
+ "music": {
+  "file": "../digital-studio-reel/audio/music_promo_48s.wav"
+ },
+ "captions": {
+  "burn": true
+ },
+ "scenes": [
+  {
+   "id": "p_hook",
+   "type": "title",
+   "dur": 5,
+   "icon": "pendrive-x",
+   "headline": "কাস্টমারের ফাইল *খুঁজে পাচ্ছেন না?*",
+   "vo": "পেনড্রাইভে কাস্টমারের ফাইল খুঁজতে খুঁজতে ক্লান্ত?"
+  },
+  {
+   "id": "p_dash",
+   "type": "screen",
+   "dur": 5,
+   "headline": "ডিজিটাল স্টুডিও · *১ জিবি ফ্রি*",
+   "segments": [
+    {
+     "clip": "recordings/raw/dashboard.mp4",
+     "in": 3.6,
+     "out": 8.6
+    }
+   ],
+   "zoom": [
+    {
+     "t": 0.6,
+     "x": 0.75,
+     "y": 0.55,
+     "scale": 1.7,
+     "dur": 4.4,
+     "hold": true
+    }
+   ],
+   "vo": "এবার সব ফাইল রাখুন ডিজিটাল স্টুডিওতে, টেস্ট ভার্সনে এক জিবি একদম ফ্রি।"
+  },
+  {
+   "id": "p_files",
+   "type": "screen",
+   "dur": 5,
+   "headline": "প্রতি কাস্টমারের *আলাদা ফোল্ডার*",
+   "segments": [
+    {
+     "clip": "recordings/raw/add_customer.mp4",
+     "in": 3.3,
+     "out": 5.8
+    },
+    {
+     "clip": "recordings/raw/upload.mp4",
+     "in": 6.0,
+     "out": 10.0
+    }
+   ],
+   "vo": "প্রতিটি কাস্টমারের আলাদা ফোল্ডার, আলাদা লগইন।"
+  },
+  {
+   "id": "p_cust",
+   "type": "screen",
+   "dur": 5,
+   "headline": "কাস্টমার *নিজেই ডাউনলোড* করে",
+   "segments": [
+    {
+     "clip": "recordings/raw/customer_files.mp4",
+     "in": 0.3,
+     "out": 5.3
+    }
+   ],
+   "vo": "কাস্টমার নিজের মোবাইল থেকেই ফাইল দেখে আর ডাউনলোড করে।"
+  },
+  {
+   "id": "p_tools",
+   "type": "screen",
+   "dur": 6,
+   "headline": "পাসপোর্ট ছবি ও *এনআইডি A4*",
+   "segments": [
+    {
+     "clip": "recordings/raw/photo_tool.mp4",
+     "in": 10.3,
+     "out": 14.0
+    },
+    {
+     "clip": "recordings/raw/nid_tool.mp4",
+     "in": 12.0,
+     "out": 14.6
+    }
+   ],
+   "vo": "পাসপোর্ট ছবি আর এনআইডি প্রিন্ট, এক ক্লিকেই তৈরি।"
+  },
+  {
+   "id": "p_biz",
+   "type": "screen",
+   "dur": 5,
+   "headline": "অর্ডার · হিসাব · *রিভিউ*",
+   "segments": [
+    {
+     "clip": "recordings/raw/orders.mp4",
+     "in": 21.8,
+     "out": 24.8
+    },
+    {
+     "clip": "recordings/raw/customer_review.mp4",
+     "in": 10.0,
+     "out": 12.4
+    }
+   ],
+   "vo": "পণ্য বিক্রি, অর্ডারের হিসাব আর কাস্টমারের রিভিউ, সব এক জায়গায়।"
+  },
+  {
+   "id": "p_cta",
+   "type": "cta",
+   "dur": 9,
+   "vo": "কোনো ইনস্টল লাগবে না, ব্রাউজারেই চলে। আজই রেজিস্টার করুন, আর আপনার মতামত জানান।"
+  }
+ ]
+}

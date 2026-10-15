@@ -142,7 +142,7 @@ Times are cumulative. "VO" is the voice-over; "Screen" is what is recorded;
 - **Screen:** স্টাফ → add "ডেমো স্টাফ" (number 01700-000000) → staff list.
 - **Text:** স্টাফ ও ম্যানেজার অ্যাকাউন্ট
 - **VO:** দোকানে কর্মচারী থাকলে তাদের জন্য আলাদা স্টাফ অ্যাকাউন্ট খুলে
-  দিন। আয়ের রিপোর্ট আর দোকানের সেটিং শুধু আপনার হাতেই থাকবে।
+  দিন। সাধারণ স্টাফ রিপোর্ট, স্টোরেজ আর দোকানের প্রোফাইল দেখতে পারবে না।
 
 ### 13. Call to action (4:31 to 4:50)
 - **Screen:** end card: logo, offer badge, URL, "Developed by Yousuf
@@ -159,7 +159,6 @@ with pauses.**
 
 ## Note on item 12
 
-Line 2 of the staff VO ("আয়ের রিপোর্ট … শুধু আপনার হাতেই") is true for
-the রিপোর্ট tab, but plain staff still see the income **number** on the
-dashboard (D21). If the owner does not fix D21 first, change it to:
-"রিপোর্ট আর দোকানের সেটিং শুধু আপনি দেখবেন।"
+The staff VO names only what is hidden from plain staff (the রিপোর্ট,
+স্টোরেজ and প্রোফাইল tabs, R27). It does **not** say income is owner-only,
+because plain staff still see the income number on the dashboard (D21).
