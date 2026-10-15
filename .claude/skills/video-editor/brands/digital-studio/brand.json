@@ -129,7 +129,8 @@
     "allow": [
       "shop name",
       "shop address",
-      "the business contact number 01865453564 on the CTA card (user-approved)"
+      "the business contact number 01865453564 on the CTA card (user-approved)",
+      "the demo shop's test mobile number 01581470954 (user-approved to appear on screen)"
     ],
     "style": "blur"
   },
