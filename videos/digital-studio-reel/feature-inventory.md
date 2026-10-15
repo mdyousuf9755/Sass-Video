@@ -58,9 +58,9 @@ Tabs, in order: ড্যাশবোর্ড, কাস্টমার, সে
 | B2 | কাস্টমার: new | Name, mobile, password (8+ characters); username = mobile number. A welcome card shows the login details to pass on (SMS, WhatsApp or copy; automatic SMS only if the admin enabled it) | 👁 ⛔ | Add customer (**blur the password**) |
 | B3 | কাস্টমার: other shop's customer | Search by username; ask for access; the customer approves or revokes | 👁 📄 ⛔ | Optional |
 | B4 | Customer folder | Profile + edit; "কাজ সম্পন্ন হয়েছে বলে চিহ্নিত করুন" (mark job done); upload JPG/PNG/WebP/PDF up to 25 MB each; "ডকুমেন্ট স্ক্যান" (phone camera photo, **no auto-straightening**); download / delete; password reset; report customer | 👁 ⛔ | File upload |
-| B5 | সেবা → ফটো এডিট | Passport photo maker in the browser: 35×45 / 45×55 / 25×30 mm or custom size; rotate and straighten; **background change** (white / light blue / grey / transparent); zoom, brightness, contrast; export JPG/PNG or an **A4 sheet of 4–20 copies** as PDF/JPG; save directly into a customer's folder | 📄 ⛔ | **Strong new scene** |
+| B5 ✅ | সেবা → ফটো এডিট | Passport photo maker in the browser: 35×45 / 45×55 / 25×30 mm or custom size; rotate and straighten; **background change** (white / light blue / grey / transparent); zoom, brightness, contrast; export JPG/PNG or an **A4 sheet of 4–20 copies** as PDF/JPG; save directly into a customer's folder | 📄 ⛔ | **Strong new scene** |
 | B6 | সেবা → AI এডিট (inside ফটো এডিট) | "AI দিয়ে লিখে এডিট": typed prompt or quick chips (e.g. a black coat, white shirt and tie). 1 credit per image | ⚠️ the code has an error text "এখনো চালু হয়নি (Google বিলিং বাকি)" | **Leave out until tested** |
-| B7 | সেবা → এনআইডি A4 | Front + back NID photos → auto-straighten (±20°) → real card size on A4 as PDF/JPG | 📄 ⛔ | Strong new scene (**use a fake/sample card only**) |
+| B7 ✅ | সেবা → এনআইডি A4 | Front + back NID photos → auto-straighten (±20°) → real card size on A4 as PDF/JPG | 📄 ⛔ | Strong new scene (**use a fake/sample card only**) |
 | B8 | শপ → পণ্য | Add product: name, price, stock, description, extra info, image (2 MB); up to 200 products | 👁 ⛔ | Shop |
 | B9 | শপ → পণ্যের অর্ডার / সেবার অর্ডার | Order list, status updates, confirming payment | 📄 ⛔ | Orders |
 | B10 | শপ → পেমেন্ট | Cash; bKash / Nagad / Rocket numbers; bank (optional). Money goes straight to the shop | 👁 ⛔ | Payment (**blur the numbers**) |
@@ -111,6 +111,8 @@ was changed on the site.
 | D13 | First SMS code did not arrive; the resend did (test-report R5) | Live | Watch |
 | D14 | The সহায়তা tab shows a "ভার্চুয়াল অ্যাসিস্ট্যান্ট (আমাদের টিম)" request form, though the owner says it is not launched | Live | Keep out of videos |
 | D15 | New-customer form: if "কাস্টমার যোগ করুন" is pressed while the number is still being checked, the page re-renders, clears the password and **re-ticks "অটো SMS পাঠান"** even if the owner unticked it, so an SMS could go out unintentionally (test-report R9) | Live | Medium |
+| D16 | Photo tool: saving the A4 sheet to a customer's folder shows no confirmation message (test-report R15) | Live | Low |
+| D17 | NID tool: auto-trim leaves a thin strip of background at the card's side edges (test-report R16) | Live | Low |
 | D11 | AI photo edit may not be live (error text "Google বিলিং বাকি"); the "AI সহকারী" card is placeholder text | Code | **Keep both out of the videos** |
 
 ## E. Rules for the scripts that follow from this

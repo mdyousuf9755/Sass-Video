@@ -23,6 +23,10 @@ here.
 | R12 | 2026-10-15 | Customer login + every customer tab (separate browser) | Demo customer's mobile + password | Login OK. হোম, আমার ফাইল, আমার দোকান, অর্ডার, নোটিফিকেশন, সাহায্য, আমার প্রোফাইল all open with no errors. Both files listed; JPG download OK. Home shows a real sponsored ad and other real shops in "সব দোকান" | ✅ |
 | R13 | 2026-10-15 | Mark job done (shop) → notification → review (customer) | 5 stars + demo comment | Shop button turns into "✓ কাজ সম্পন্ন (বাতিল করতে চাপুন)". Customer gets notification "আপনার কাজ সম্পন্ন হয়েছে…" (badge "নোটিফিকেশন (১)") and a home banner with "রিভিউ দিন". Review submitted: "আপনি রিভিউ দিয়েছেন। ধন্যবাদ!", shop rating ৫.০ | ✅ |
 
+| R14 | 2026-10-15 | সেবা → ফটো এডিট: passport photo | Owner-supplied portrait (used with permission) | Loaded; 35×45 mm at 300 DPI (413×531 px). Background "হালকা নীল" with the smart (person-detection) method: "✓ মানুষ আলাদা করা হয়েছে…". Downloads OK: photo JPG, A4 sheet PDF and JPG with 8 copies. Slight white halo at the hair and ear edges | ✅ |
+| R15 | 2026-10-15 | Photo tool → "A4 শিট (PDF) কাস্টমারের ফোল্ডারে রাখুন" | Demo customer | File appears in the folder ("ফাইল (৩)", photo-sheet-a4.pdf 446 KB). **No on-screen confirmation** was visible after saving | ✅ / ⚠️ UX |
+| R16 | 2026-10-15 | সেবা → এনআইডি A4 | Generic "DEMO ID CARD" made for the test (fake data, no real person), photographed tilted +6° / −5° on a desk | Auto-straighten detected −6° and +5° exactly. A4 PDF and JPG: both sides straight, real card size, centred. Auto-trim leaves a thin strip of the desk on the left and right edges | ✅ / ⚠️ minor |
+
 The first number (01581470954) was already registered, so R2 stopped as the
 brief requires; no login was attempted on that existing account.
 
@@ -59,3 +63,6 @@ brief requires; no login was attempted on that existing account.
   "সব দোকান" and a real sponsored ad from another shop. Shop name and
   address are allowed on screen, but these are third parties: crop or blur
   them, or show only the demo shop.
+- A real person's NID (shared online) was offered for the NID test. It was
+  **not used**: it carries a real name, NID number, address and face. The
+  generic DEMO ID card is used in its place.
