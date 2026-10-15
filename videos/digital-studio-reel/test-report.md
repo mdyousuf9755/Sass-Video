@@ -37,6 +37,8 @@ here.
 | R23 | 2026-10-15 | Shop: set price ৳50, status "চলছে", আপডেট | — | "আপডেট হয়েছে", status "চলছে" | ✅ |
 | R24 | 2026-10-15 | টেমপ্লেট: download the ready-made file and a design template | "English 2 page cv"; visiting card → "SVG ডাউনলোড করুন" | Both download (DOCX 86 KB, SVG). **The only ready-made CV is a real person's CV** (full name, home address, mobile number, email), available to every shop. The downloaded copy was deleted | ✅ / ❌ **privacy** |
 
+| R25 | 2026-10-15 | স্টাফ → add staff | Owner-supplied number, role স্টাফ | Server `manage-customers` → HTTP 409, "আগেই ব্যবহার হয়েছে": the number already has an account. No staff created; test stopped | ⛔ needs an unused number |
+
 The first number (01581470954) was already registered, so R2 stopped as the
 brief requires; no login was attempted on that existing account.
 
@@ -76,3 +78,4 @@ brief requires; no login was attempted on that existing account.
 - A real person's NID (shared online) was offered for the NID test. It was
   **not used**: it carries a real name, NID number, address and face. The
   generic DEMO ID card is used in its place.
+- The owner chose to keep the "English 2 page cv" template as it is. It must never appear in a video.
