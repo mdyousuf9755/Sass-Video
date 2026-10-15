@@ -20,7 +20,7 @@ always blurred.
 | Clip | Scene(s) | Account | Actions | Blur / replace |
 |---|---|---|---|---|
 | `login_roles` | 1 | none | Open the site; click কাস্টমার, দোকানদার, অ্যাডমিন | — |
-| `register` | 2 | new throwaway? **No**: replay on the filled form only, without sending a code | Fill the form with the demo values (do **not** press "কোড পাঠান"); then cut to the code screen, re-staged with the screenshot from R4 | number → demo, password |
+| `register` | 2 | none (logged out) | Fill the form with the demo values but do **not** press "কোড পাঠান"; then cut to the code screen from the real test (R4) | number → demo, password |
 | `dashboard` | 3, promo 2 | shop | Dashboard, slow scroll to the storage card | shop code (optional) |
 | `add_customer` | 4, promo 3 | shop | Fill the new-customer form with a **second** demo customer, or replay the welcome card | number → demo, password, welcome-card password |
 | `upload` | 5, promo 3 | shop | Folder → choose files → আপলোড করুন | username/number line |
